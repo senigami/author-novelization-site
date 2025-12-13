@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Author Services</title>
+    <meta name="description" content="Examples of novelization work, including structure audits and layout design.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Author<span style="color: var(--accent-gold)">Enablement</span></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero" style="padding-top: 150px; text-align: center;">
+        <div class="container">
+            <h1>Portfolio & Case Studies</h1>
+            <p class="section-subtitle">Demonstrating the transformation from raw text to published product.</p>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer" style="padding: 20px 0; background: rgba(103, 58, 183, 0.1);">
+        <div class="container" style="text-align: center;">
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+                <em>Note: All examples below are public domain, fictional demonstrations, or shared with explicit
+                    permission. No client manuscripts are shown without consent.</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+
+                <!-- Dracula Demo -->
+                <div class="card">
+                    <div
+                        style="height: 300px; background: #000; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 1.5rem; border-radius: 4px;">
+                        <img src="assets/images/placeholder-cover-dracula.png" alt="Dracula Book Cover Concept"
+                            style="height: 100%; width: auto;">
+                    </div>
+                    <h3>Public Domain Demo: Dracula</h3>
+                    <div style="margin: 1rem 0;">
+                        <span
+                            style="background: var(--accent-gold); color: #000; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 700;">Novelization</span>
+                        <span
+                            style="border: 1px solid var(--text-muted); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">Layout</span>
+                    </div>
+                    <p><strong>Challenge:</strong> Adapt the classic epistolary structure into a modern, fast-paced
+                        thriller format while retaining the original voice.</p>
+                    <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--text-muted);">
+                        <li>Reduced word count by 15% (removing redundant journal entries).</li>
+                        <li>Modernized chapter breaks for better suspense.</li>
+                        <li>Created custom chapter headers using Gothic typography.</li>
+                    </ul>
+                </div>
+
+                <!-- Synthetic Demo -->
+                <div class="card">
+                    <div
+                        style="height: 300px; background: #0f0f1f; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 1.5rem; border-radius: 4px;">
+                        <!-- Using the duplicated image as placeholder for now since generation failed -->
+                        <img src="assets/images/placeholder-cover-synthetic.png" alt="Crystal Tower Book Cover Concept"
+                            style="height: 100%; width: auto;">
+                    </div>
+                    <h3>Synthetic Demo: "Crystal Tower"</h3>
+                    <div style="margin: 1rem 0;">
+                        <span
+                            style="background: var(--accent-purple); color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 700;">LitRPG
+                            Structure</span>
+                    </div>
+                    <p><strong>Challenge:</strong> A fictional demonstration of handling heavy "System" messages and
+                        stat blocks without breaking immersion.</p>
+                    <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--text-muted);">
+                        <li>Designed "Game Interface" boxes for stats using CSS/Layout tools.</li>
+                        <li>Consolidated repetitive skill notifications.</li>
+                        <li>Created a "Book 1" climax from a continuous web stream.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Novelization & Publishing Enablement. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

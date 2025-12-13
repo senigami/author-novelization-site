@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Author Services</title>
+    <meta name="description" content="Contact me to discuss your novelization project.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            color: #fff;
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .privacy-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Author<span style="color: var(--accent-gold)">Enablement</span></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero" style="padding-top: 150px; text-align: center;">
+        <div class="container">
+            <h1>Start the Conversation</h1>
+            <p class="section-subtitle">Tell me about your story. No obligation.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <div class="container" style="max-width: 600px;">
+            <div class="card">
+                <!-- Using Formspree Placeholder Endpoint -->
+                <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
+
+                    <div class="form-group">
+                        <label for="name">Name / Pen Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-link">Project Link (Optional)</label>
+                        <input type="url" id="project-link" name="projectLink"
+                            placeholder="https://royalroad.com/fiction/...">
+                    </div>
+
+                    <div class="form-row" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <div class="form-group" style="flex: 1; min-width: 200px;">
+                            <label for="words">Approx Word Count</label>
+                            <input type="text" id="words" name="wordCount" placeholder="e.g. 120k">
+                        </div>
+                        <div class="form-group" style="flex: 1; min-width: 200px;">
+                            <label for="genre">Genre</label>
+                            <input type="text" id="genre" name="genre" placeholder="LitRPG, Cultivation, etc.">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model">Preferred Model</label>
+                        <select id="model" name="pricingModel">
+                            <option value="unsure">Not Sure Yet</option>
+                            <option value="royalty">Royalty Share (No Upfront)</option>
+                            <option value="hire">Work-for-Hire (Flat Fee)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message / Goals</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tell me a bit about what you're looking for..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+
+                    <p class="privacy-note">🔒 I'll never share your info or manuscript details with anyone.</p>
+                </form>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <p>Or email me directly at <a href="mailto:demo@example.com">demo@example.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Novelization & Publishing Enablement. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
