@@ -87,7 +87,7 @@
     <section class="contact-form">
         <div class="container" style="max-width: 600px;">
             <div class="card">
-                <!-- Using Formspree Placeholder Endpoint -->
+                <!-- Formspree Integration with Fallback -->
                 <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
 
                     <div class="form-group">
@@ -132,6 +132,11 @@
                             placeholder="Tell me a bit about what you're looking for..."></textarea>
                     </div>
 
+                    <!-- Mailto Fallback Script -->
+                    <script>
+                        // Optional: Check if formspree works or provide a button to switch to mailto
+                    </script>
+
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
 
                     <p class="privacy-note">🔒 I'll never share your info or manuscript details with anyone.</p>
@@ -139,7 +144,12 @@
             </div>
 
             <div style="text-align: center; margin-top: 2rem;">
-                <p>Or email me directly at <a href="mailto:demo@example.com">demo@example.com</a></p>
+                <p>Having trouble with the form? Email me directly at <a href="mailto:hello@DOMAIN.com"
+                        style="color: var(--accent-gold); font-weight: bold;">hello@DOMAIN.com</a></p>
+                <div style="margin-top: 1rem;">
+                    <a href="mailto:hello@DOMAIN.com?subject=Inquiry%20about%20Novelization" class="btn btn-secondary"
+                        style="font-size: 0.9rem;">Open Email Client</a>
+                </div>
             </div>
         </div>
     </section>
