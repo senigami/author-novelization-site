@@ -15,6 +15,71 @@
   /* Spacing */
   --container-width: 1200px;
   --header-height: 70px;
+
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+
+  /* Cinematic Background: Dark stone feel with magical glows */
+  background-image:
+    linear-gradient(to bottom, rgba(18, 18, 18, 0.4), rgba(18, 18, 18, 0.8)),
+    /* Lowered opacity further for punch */
+    url('../images/hero-banner1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  /* Optional: Keep a subtle overlay if needed, or remove if the image is perfect */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, transparent 0%, var(--bg-dark) 90%);
+  pointer-events: none;
+}
+
+/* Section Dividers */
+.section-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #000000;
+  /* Solid black for seamless look */
+  /* Ensure it blends */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.section-divider img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  opacity: 0.8;
+  max-height: 50px;
+  /* Keep them elegant, not overwhelming */
+}
+
+/* Accent Backgrounds */
+.bg-accent-1 {
+  background:
+    linear-gradient(to bottom, rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)),
+    url('../images/portfolio-accent1.png');
+  background-size: cover;
+  background-position: center;
 }
 
 /* Reset & Base */
@@ -26,13 +91,21 @@
 
 body {
   background-color: var(--bg-dark);
+  background-image: url('../images/background.png');
+  background-repeat: repeat;
+  background-position: top center;
   color: var(--text-main);
   font-family: var(--font-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   color: var(--text-main);
   margin-bottom: 1rem;
@@ -100,7 +173,8 @@ header {
   font-size: 0.95rem;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--accent-gold);
 }
 
@@ -136,7 +210,7 @@ header {
 
   .nav-links.active {
     transform: translateX(0);
-    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
   }
 
   .hamburger {
@@ -215,7 +289,7 @@ section {
 .card:hover {
   transform: translateY(-5px);
   border-color: var(--accent-purple);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
@@ -223,7 +297,7 @@ footer {
   background-color: var(--bg-card);
   padding: 3rem 0;
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   margin-top: auto;
 }
 
