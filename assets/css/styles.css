@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --bg-dark: #121212;
+  --bg-dark: #000000;
   --bg-card: #1E1E1E;
   --text-main: #E0E0E0;
   --text-muted: #A0A0A0;
@@ -32,9 +32,7 @@
 
   /* Cinematic Background: Dark stone feel with magical glows */
   background-image:
-    linear-gradient(to bottom, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.9)),
-    /* Increased opacity for better text contrast */
-    url('../images/hero-banner4.png');
+    url('../images/hero-banner4.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -61,7 +59,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, transparent 0%, var(--bg-dark) 90%);
   pointer-events: none;
 }
 
@@ -87,10 +84,9 @@
 }
 
 /* Accent Backgrounds */
-.bg-accent-1 {
+.bg-accent {
   background:
-    linear-gradient(to bottom, rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)),
-    url('../images/portfolio-accent4.png');
+    url('../images/portfolio-accent4.webp');
   background-size: cover;
   background-position: center;
 }
@@ -104,7 +100,7 @@
 
 body {
   background-color: var(--bg-dark);
-  background-image: url('../images/background.png');
+  background-image: url('../images/background.webp');
   background-repeat: repeat;
   background-position: top center;
   color: var(--text-main);
