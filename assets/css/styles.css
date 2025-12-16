@@ -67,9 +67,6 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  background-color: #000000;
-  /* Solid black for seamless look */
-  /* Ensure it blends */
   text-align: center;
   padding: 20px 0;
 }
@@ -80,6 +77,18 @@
   display: inline-block;
   opacity: 0.8;
   /* Keep them elegant, not overwhelming */
+}
+
+.fade-in {
+  background: linear-gradient(to bottom, black, transparent 50%);
+}
+
+.fade-out {
+  background: linear-gradient(to bottom, transparent 50%, black);
+}
+
+.fade-in.active {
+  opacity: 1;
 }
 
 /* Accent Backgrounds */
